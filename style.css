@@ -1,0 +1,232 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(360deg,  #030304, #4c4e52);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.logo-alura{
+    position: absolute;
+    left: 80px;
+    top: 40px;
+}
+
+#chat-principal{
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    left: 300px;
+    top: 85px;
+    background-color: rgba(0, 0, 0, 0);
+    resize: none;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    color: #eBEEF3;
+}
+
+::placeholder{
+    font-size: 22px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    color: #eBEEF3;
+}
+
+.advertencia{
+    position: absolute;
+    display: inline-flex;
+    left: 300px;
+    top: 490px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #EBEEF3;
+
+}
+
+.pantalla{
+    position: absolute;
+    width: 320px;
+    height: 475px;
+    left: 940px;
+    top: 85px;
+    background-color: rgba(235, 238, 243, 0.7);
+    border-radius: 15px;
+    border: solid 1px #EBEEF3;
+    color: #030304;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    padding: 16px;
+    overflow: auto;
+}
+
+
+#encriptar{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 300px;
+    top: 515px;
+    border-radius: 12px;
+    border: none;
+    background-color: #eBEEF3;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+}
+
+#encriptar:hover{
+    background-color: #030304;
+    color: #eBEEF3;
+    transition: 300ms;
+}
+
+#encriptar:active{
+    background-color: #555861;
+}
+
+#desencriptar{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 470px;
+    top: 515px;
+    border-radius: 12px;
+    border: none;
+    background-color: #eBEEF3;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+}
+
+#desencriptar:hover{
+    background-color: #030304;
+    color: #eBEEF3;
+    transition: 300ms;
+}
+
+#desencriptar:active{
+    background-color: #555861;
+}
+
+#borrar{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 620px;
+    top: 445px;
+    background-color: rgba(0, 0, 0 ,0);
+    background-image: url(Icon-borrar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+#borrar:hover{
+    background-image: url(Icon-borrar-BLANCO.png);
+    transition: 300ms;
+}
+
+#borrar:active{
+    background-color: #555861;
+    border-radius: 8px;
+}
+
+#copiar{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 1030px;
+    top: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 12px;
+    border: solid 1px #030304;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    color: #030304;
+}
+
+#copiar:hover{
+   background-color: #030304;
+    color: #eBEEF3;
+    transition: 300ms;
+}
+
+#copiar:active{
+    background-color: #555861;
+}
+
+#copiar:focus::before{
+    content: "Copiado!";
+    display: block;
+    position: absolute;
+    left: 70px;
+    top: -48px;
+    transform: translateX(-50%);
+    padding: 10px;
+    margin: 5px;
+    background-color: #555861;
+    border: 1px solid #030304;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #EBEEF3;
+    opacity: 75%;
+}
+
+#copiar:focus{
+    position: relative;
+}
+
+.instrucciones{
+    position: absolute;
+    left: 45px;
+    top: 180px;
+    width: 225px;
+    height: 250px;
+    background-color: #555861;
+    border: solid 1px #EBEEF3;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: lighter;
+    color: #EBEEF3;
+    opacity: 50%;
+}
+
+.lista-instrucciones{
+    list-style: none;
+}
+
+.autor{
+    position: absolute;
+    left: 45px;
+    top: 480px;
+    width: 225px;
+    height: 110px;
+    background-color: #555861;
+    padding: 5px;
+    border-radius: 8px;
+    border: solid 1px #EBEEF3;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    color: #EBEEF3;
+    list-style: none;
+    opacity: 50%;
+}

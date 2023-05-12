@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador - Alura</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="logo-alura"><img src="Logo-Alura100.png" alt="Alura-logo"></h1>
+        </header>
+        <div>
+            <textarea id="chat-principal" placeholder="Escriba su mensaje..."></textarea>
+        </div>
+        <div>
+            <output class="pantalla"></output>
+        </div>
+        <div class="advertencia">
+            <img src="Advertencia.png">
+            <p>&nbsp&nbspSolo minisculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button id="encriptar">Encriptar</button>
+            <button id="desencriptar">Desencriptar</button>
+            <button id="borrar" > </button>
+            <button id="copiar">Copiar</button>
+        </div>
+        <div class="instrucciones">
+            <p>Instrucciones:</p><br>
+            <p>El encriptador reemplazara las siguientes letras:</p>
+            <ul class="lista-instrucciones"><br>
+                <li>a = ai</li>
+                <li>e = enter</li>
+                <li>i = imes</li>
+                <li>o = ober</li>
+                <li>u = ufat</li>
+            </ul><br>
+            <p>Desencriptar regresara el texto al original</p>
+        </div>
+        <div>
+            <ul class="autor">
+                <li>Jehiel Anthoni Fuentes Lopez</li>
+                <li>Grupo 5</li>
+                <li>#ChallengeEncriptador</li>
+                <li>Alura Latam</li>
+            </ul>
+        </div>
+    </body>
+    <script src="logica-encriptador.js"></script>
+</html>
